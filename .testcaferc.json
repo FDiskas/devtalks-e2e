@@ -1,0 +1,13 @@
+{
+  "videoPath": "reports/videos",
+  "videoOptions": {
+    "singleFile": true,
+    "failedOnly": true,
+    "pathPattern": "${USERAGENT}/${FILE_INDEX}.mp4"
+  },
+  "screenshots": {
+    "path": "reports/screenshots",
+    "pathPattern": "${USERAGENT}/${FILE_INDEX}.png",
+    "takeOnFails": true
+  }
+}

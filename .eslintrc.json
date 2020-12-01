@@ -1,0 +1,23 @@
+{
+  "extends": [
+    "eslint:recommended",
+    "prettier",
+    "prettier/@typescript-eslint",
+    "plugin:testcafe/recommended"
+  ],
+  "parser": "@typescript-eslint/parser",
+  "plugins": ["testcafe", "prettier", "@typescript-eslint/eslint-plugin"],
+  "env": {
+    "browser": true,
+    "node": true
+  },
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "project": "./tsconfig.json"
+  },
+  "rules": {
+    "prettier/prettier": "error"
+  }
+}
