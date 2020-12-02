@@ -1,0 +1,9 @@
+{
+  "baseUrl": "http://localhost:3000",
+  "watchForFileChanges": true,
+  "viewportWidth": 800,
+  "viewportHeight": 600,
+  "integrationFolder": "tests",
+  "screenshotsFolder": "reports",
+  "videosFolder": "reports"
+}

@@ -1,10 +1,16 @@
 {
-  "extends": ["eslint:recommended", "prettier", "prettier/@typescript-eslint"],
+  "extends": [
+    "eslint:recommended",
+    "prettier",
+    "prettier/@typescript-eslint",
+    "plugin:cypress/recommended"
+  ],
   "parser": "@typescript-eslint/parser",
-  "plugins": ["prettier", "@typescript-eslint/eslint-plugin"],
+  "plugins": ["prettier", "@typescript-eslint/eslint-plugin", "cypress"],
   "env": {
     "browser": true,
-    "node": true
+    "node": true,
+    "cypress/globals": true
   },
   "parserOptions": {
     "ecmaFeatures": {
@@ -13,6 +19,11 @@
     "project": "./tsconfig.json"
   },
   "rules": {
-    "prettier/prettier": "error"
+    "prettier/prettier": "error",
+    "cypress/no-assigning-return-values": "error",
+    "cypress/no-unnecessary-waiting": "error",
+    "cypress/assertion-before-screenshot": "warn",
+    "cypress/no-force": "warn",
+    "cypress/no-async-tests": "error"
   }
 }

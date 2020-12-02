@@ -8,3 +8,5 @@
 ### Setup cypress framework
 
 1. `git checkout -b cypress`
+1. `yarn add -D cypress`
+1. `yarn cypress open`
