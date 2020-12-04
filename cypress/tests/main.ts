@@ -29,5 +29,3 @@ describe('App tests', () => {
     cy.screenshot();
   });
 });
-
-export {};

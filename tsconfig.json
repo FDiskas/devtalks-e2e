@@ -17,9 +17,8 @@
     "skipLibCheck": true,
     "strict": true,
     "target": "esnext",
-    "baseUrl": ".",
-    "types": ["cypress"]
+    "baseUrl": "."
   },
-  "exclude": ["node_modules"],
+  "exclude": ["node_modules", "cypress"],
   "include": ["**/*.ts", "**/*.tsx"]
 }
