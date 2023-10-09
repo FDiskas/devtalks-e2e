@@ -7,11 +7,9 @@ type Props = {
   data: User;
 };
 
-const ListItem = ({ data }: Props) => (
+export const ListItem = ({ data }: Props) => (
   <Link href="/users/[id]" as={`/users/${data.id}`}>
-    <a>
-      {data.id}: {data.name}
-    </a>
+    {data.id}: {data.name}
   </Link>
 );
 

@@ -1,12 +1,9 @@
 # e2e testing frameworks overview - testcafe & cypress
 
-## Setup project steps
+## cypress
+ 1. Install dependencies `yarn`
+ 1. run dev server `yarn dev`
+ 1. run e2e tests `yarn cypress open`
 
-1. `yarn create next-app --example with-typescript .`
-1. `git init`
-
-### Setup cypress framework
-
-1. `git checkout -b cypress`
-1. `yarn add -D cypress`
-1. `yarn cypress open`
+### Headless e2e for CI
+1. `yarn test:ci`

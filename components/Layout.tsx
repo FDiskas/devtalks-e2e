@@ -16,26 +16,18 @@ const Layout = ({ children, title = 'This is the default title' }: Props) => (
     </Head>
     <header>
       <nav>
-        <Link href="/">
-          <a data-test="demonas">Home</a>
+        <Link data-test="demonas" href="/">
+          Home
         </Link>{' '}
-        |{' '}
-        <Link href="/about">
-          <a>About</a>
-        </Link>{' '}
-        |{' '}
-        <Link href="/users">
-          <a>Users List</a>
-        </Link>{' '}
-        | <a href="/api/users">Users API</a>
+        | <Link href="/about">About</Link> |{' '}
+        <Link href="/users">Users List</Link> |{' '}
+        <a href="/api/users">Users API</a>
       </nav>
     </header>
     {children}
     <footer style={{ position: 'fixed', bottom: 0, left: 0, right: 0 }}>
       <hr />
-      <Link href="/">
-        <a>I'm here to stay (Footer)</a>
-      </Link>
+      <Link href="/">I'm here to stay (Footer)</Link>
     </footer>
   </div>
 );
